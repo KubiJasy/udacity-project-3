@@ -62,7 +62,7 @@ def get_drinks_detail():
         short_form_drinks = [drink.long() for drink in drinks]
         return jsonify({
             'success': True,
-            'drinks': short_form_drinks
+            'drinks': short_form_drinks 
         })
     except:
         abort(422)
